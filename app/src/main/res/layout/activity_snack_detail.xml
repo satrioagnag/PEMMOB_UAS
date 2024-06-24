@@ -170,7 +170,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/total_text"
-        android:text="Sign In"
+        android:text="Pay"
         android:backgroundTint="#02457A"
         android:textColor="@android:color/white" />
 

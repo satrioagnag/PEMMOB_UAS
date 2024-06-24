@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -23,6 +24,10 @@ class PaymentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_payment)
 
+        findViewById<View>(R.id.btnBack).setOnClickListener {
+            startActivity(Intent(this@PaymentActivity, SeatScreenActivity::class.java))
+            finish()
+        }
         // Initialize views
         movieImageView = findViewById(R.id.imageViewPoster)
         movieTitleTextView = findViewById(R.id.textViewTitle)
