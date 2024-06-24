@@ -11,13 +11,13 @@ class PaymentSuccessActivity : AppCompatActivity() {
         setContentView(R.layout.activity_payment_success)
         val btnNext = findViewById<Button>(R.id.btn_print_e_ticket)
         btnNext.setOnClickListener {
-            navigateToHome()
+            navigateToInvoice()
         }
     }
 
-    private fun navigateToHome() {
+    private fun navigateToInvoice() {
         // Start PaymentActivity
-        val intent = Intent(this, MainScreenActivity::class.java)
+        val intent = Intent(this, InvoicePaymentActivity::class.java)
         startActivity(intent)
     }
 }
