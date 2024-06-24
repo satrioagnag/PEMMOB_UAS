@@ -1,7 +1,9 @@
 package com.example.projectuas
 
+import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.os.Bundle
+import android.widget.Button
 import android.widget.RadioButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -18,6 +20,11 @@ class PaymentMethodActivity : AppCompatActivity() {
 
         setRadioButtonDrawableSize(rbDana, R.drawable.ic_dana, 150, 150)
         setRadioButtonDrawableSize(rbBni, R.drawable.ic_bni, 150, 150)
+
+        val NextOrder = findViewById<Button>(R.id.btn_pay_order)
+        NextOrder.setOnClickListener {
+            navigateToSuccess()
+        }
     }
 
     private fun setRadioButtonDrawableSize(radioButton: RadioButton, drawableId: Int, width: Int, height: Int) {
@@ -28,5 +35,10 @@ class PaymentMethodActivity : AppCompatActivity() {
             scaledDrawable.setBounds(0, 0, width, height)
             radioButton.setCompoundDrawables(scaledDrawable, null, null, null)
         }
+    }
+    private fun navigateToSuccess() {
+        // Start PaymentActivity
+        val intent = Intent(this, PaymentSuccessActivity::class.java)
+        startActivity(intent)
     }
 }
