@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ProjectUAS"
         tools:targetApi="31">
         <activity
+            android:name=".ReportActivity"
+            android:exported="false" />
+        <activity
             android:name=".PaymentSnackSuccessActivity"
             android:exported="false" />
         <activity
@@ -54,7 +57,6 @@
         <activity
             android:name=".SignUpActivity"
             android:exported="false" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
