@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<View>(R.id.start_button).setOnClickListener {
+        findViewById<View>(R.id.user).setOnClickListener {
             startActivity(Intent(this@MainActivity, SignUpActivity::class.java))
             finish()
         }
