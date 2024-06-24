@@ -15,17 +15,14 @@
             android:layout_width="290dp"
             android:layout_height="200dp"
             android:layout_gravity="center_horizontal"
-            app:cardCornerRadius="16dp"
-            >
-        <ImageView
-            android:id="@+id/imageViewPoster"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/detail_payment"
-            android:layout_marginBottom="16dp"/>
-
+            app:cardCornerRadius="16dp">
+            <ImageView
+                android:id="@+id/imageViewPoster"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/detail_payment"
+                android:layout_marginBottom="16dp"/>
         </androidx.cardview.widget.CardView>
-
 
         <TextView
             android:id="@+id/textViewTitle"
@@ -59,7 +56,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Genre : Adventure, Animation"/>
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -68,7 +64,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nov 5, 2024"/>
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -77,7 +72,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3"/>
-
             </LinearLayout>
 
             <LinearLayout
@@ -94,7 +88,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10:00 - 12:00"/>
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -103,7 +96,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="D"/>
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -112,9 +104,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="D5, D6, D7, D8"/>
-
             </LinearLayout>
-
         </LinearLayout>
 
         <TextView
@@ -146,12 +136,12 @@
                     android:layout_weight="1"/>
 
                 <TextView
+                    android:id="@+id/totalPrice"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Rp160.000,-"
+                    android:text=""
                     android:layout_weight="1"
                     android:gravity="end"/>
-
             </LinearLayout>
 
             <LinearLayout
@@ -167,12 +157,12 @@
                     android:layout_weight="1"/>
 
                 <TextView
+                    android:id="@+id/serviceFee"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Rp5.000,-"
+                    android:text=""
                     android:layout_weight="1"
                     android:gravity="end"/>
-
             </LinearLayout>
 
             <LinearLayout
@@ -189,23 +179,22 @@
                     android:textStyle="bold"/>
 
                 <TextView
+                    android:id="@+id/totalPayment"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Rp165.000,-"
+                    android:text=""
                     android:layout_weight="1"
                     android:gravity="end"
                     android:textStyle="bold"/>
-
             </LinearLayout>
         </LinearLayout>
 
         <Button
-            android:id="@+id/btnNext"
+            android:id="@+id/btnPay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pay"
+            android:textColor="#ffffff"
             android:backgroundTint="#02457A"
-            android:textColor="@android:color/white"/>
-
+            android:text="Pay"/>
     </LinearLayout>
 </ScrollView>
