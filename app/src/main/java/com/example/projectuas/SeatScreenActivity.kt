@@ -16,9 +16,15 @@ class SeatScreenActivity : AppCompatActivity() {
     private var selectedSeats = mutableSetOf<Button>()
     private val seatPrice = 40000
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_seat_screen)
+
+        val btnNext = findViewById<Button>(R.id.btnNext)
+        btnNext.setOnClickListener {
+            navigateToPayment()
+        }
 
         // Inisialisasi ID kursi
         seatButtons = listOf(
