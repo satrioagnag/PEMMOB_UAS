@@ -3,10 +3,8 @@ package com.example.projectuas
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
+import android.widget.GridLayout
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
-import androidx.gridlayout.widget.GridLayout
 
 class SeatScreenActivity : AppCompatActivity() {
 

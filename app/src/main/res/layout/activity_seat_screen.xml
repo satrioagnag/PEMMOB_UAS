@@ -472,13 +472,15 @@
 
         <!-- Next Button -->
         <Button
-            android:id="@+id/btnNext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_background"
+            android:padding="5dp"
             android:text="Next"
-            android:backgroundTint="#02457A"
-            android:textColor="@android:color/white" />
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
     </LinearLayout>
 
 </ScrollView>
