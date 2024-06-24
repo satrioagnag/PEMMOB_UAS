@@ -55,13 +55,24 @@
         android:textSize="16sp" />
 
     <Button
-        android:id="@+id/start_button"
+        android:id="@+id/user"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/sub_description"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#02457A"
-        android:text="Start"
+        android:text="User"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/admin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#02457A"
+        android:text="Admin"
         android:textColor="@android:color/white" />
 </RelativeLayout>
