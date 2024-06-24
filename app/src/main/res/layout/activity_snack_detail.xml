@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SnackDetailActivity"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Back button -->
+
+
+    <ImageView
+        android:id="@+id/back_button2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_back" />
+
+    <!-- Order Text -->
+    <TextView
+        android:id="@+id/order_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Order."
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#02457A" />
+
+    <!-- Food image -->
+
+    <!-- Price Text -->
+
+    <!-- Kenyang Pack Text -->
+
+    <ImageView
+        android:id="@+id/food_image"
+        android:layout_width="273dp"
+        android:layout_height="233dp"
+        android:layout_below="@+id/order_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-9dp"
+
+        android:src="@drawable/food_image" />
+
+    <!-- Details Text -->
+
+    <TextView
+        android:id="@+id/price_text"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/food_image"
+        android:layout_marginTop="14dp"
+        android:text="Rp.110.000"
+        android:textColor="#02457A"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/kenyang_pack_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price_text"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="10dp"
+        android:text="Kenyang Pack"
+        android:textColor="#02457A"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/details_text"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kenyang_pack_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="1 Chicken Burger Double + 1 Popcorn Salt (S) + 1 Soft Drink (S)"
+        android:textColor="#949494"
+        android:textSize="16sp" />
+
+    <!-- Note EditText -->
+    <EditText
+        android:id="@+id/note_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_text"
+        android:layout_marginTop="16dp"
+        android:hint="Note :"
+        android:background="@drawable/edit_text_background"
+        android:padding="8dp"
+        android:textSize="16sp" />
+
+    <!-- Quantity Selector -->
+    <LinearLayout
+        android:id="@+id/quantity_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/note_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/decrease_button"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="#02457A"
+            android:padding="8dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text="-"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/quantity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="3"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/increase_button"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="#02457A"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:padding="8dp"
+            android:text="+"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Total Price Text -->
+
+    <!-- Next Button -->
+    <TextView
+        android:id="@+id/total_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quantity_selector"
+        android:layout_marginTop="13dp"
+        android:text="3 Pack"
+        android:textStyle="bold"
+        android:textColor="#02457A"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/total_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="272dp"
+        android:paddingTop="609dp"
+        android:text="Rp.330.000"
+        android:textColor="#02457A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total_text"
+        android:text="Sign In"
+        android:backgroundTint="#02457A"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

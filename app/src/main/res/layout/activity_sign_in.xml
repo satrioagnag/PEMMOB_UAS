@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/logo" />
+
+        <!-- Sign Up Title -->
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/sign_up_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="37dp"
+            android:text="Sign In"
+            android:textColor="#02457A"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Nama Field -->
+        <TextView
+            android:id="@+id/sign_up_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_up_title"
+            android:layout_marginTop="11dp"
+            android:text="Silahkan mengisi akun yang telah terdaftar."
+            android:textColor="#018ABE"
+            android:textSize="16sp" />
+
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_up_subtitle"
+            android:layout_marginTop="16dp"
+            android:hint="Email"
+            android:background="@drawable/edit_text_background"
+            android:padding="16dp"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginTop="16dp"
+            android:hint="Password"
+            android:background="@drawable/edit_text_background"
+            android:padding="16dp"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/sign_up_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_marginTop="32dp"
+            android:text="Sign In"
+            android:backgroundTint="#02457A"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+</ScrollView>
+
+

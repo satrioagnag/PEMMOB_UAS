@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- Setengah Lingkaran Biru -->
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="290dp"
+        android:layout_height="363dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg" />
+
+    <!-- Deskripsi Aplikasi -->
+
+    <!-- Tombol Start -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/splash_screen" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="303dp"
+        android:text="What is CineEase?"
+        android:textColor="#02457A"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sub_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="Aplikasi Pembelian Tiket Bioskop dan Snack"
+        android:textColor="#018ABE"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sub_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:backgroundTint="#02457A"
+        android:text="Start"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

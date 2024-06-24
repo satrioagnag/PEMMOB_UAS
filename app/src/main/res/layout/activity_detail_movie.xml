@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MovieDetailActivity">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Header Title -->
+
+    <!-- Movie Poster -->
+    <TextView
+        android:id="@+id/tvHeaderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="16dp"
+        android:text="Movie."
+        android:textColor="#06336A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/movie_image"
+        android:layout_width="277dp"
+        android:layout_height="313dp"
+        android:src="@drawable/toy_story_poster"
+        app:layout_constraintBottom_toTopOf="@id/ivAgeRating"
+        app:layout_constraintDimensionRatio="H,3:4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHeaderTitle" />
+
+    <!-- Age Rating -->
+    <TextView
+        android:id="@+id/ivAgeRating"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_corner_bg"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="10+"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@id/ivFormat"
+        app:layout_constraintStart_toStartOf="@id/movie_image"
+        app:layout_constraintTop_toBottomOf="@id/movie_image" />
+
+    <!-- Format -->
+    <TextView
+        android:id="@+id/ivFormat"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_corner_bg"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="2D"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@id/ivDuration"
+        app:layout_constraintStart_toEndOf="@id/ivAgeRating"
+        app:layout_constraintTop_toBottomOf="@id/movie_image" />
+
+    <!-- Duration -->
+    <TextView
+        android:id="@+id/ivDuration"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_corner_bg"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="120 MINUTES"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toEndOf="@id/movie_image"
+        app:layout_constraintStart_toEndOf="@id/ivFormat"
+        app:layout_constraintTop_toBottomOf="@id/movie_image" />
+
+    <!-- Movie Title -->
+
+    <!-- Director -->
+
+    <TextView
+        android:id="@+id/movie_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Toy Story"
+        android:textColor="#06336A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivAgeRating" />
+
+    <TextView
+        android:id="@+id/tvDirector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Director  John Lasseter"
+        android:textColor="#6D6D6D"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movie_title"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Rating -->
+    <LinearLayout
+        android:id="@+id/llRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDirector"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.0"
+            android:textColor="#06336A"
+            android:textSize="16sp" />
+
+        <!-- Add star icons here -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star" /> <!-- Replace with your star icon -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star" />
+    </LinearLayout>
+
+    <!-- Movie Description -->
+
+    <!-- Booking Button -->
+
+    <TextView
+        android:id="@+id/tvMovieDescription"
+        android:layout_width="381dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:justificationMode="inter_word"
+        android:text="Woody (Tom Hanks), a good-hearted cowboy doll who belongs to a young boy named Andy (John Morris), sees his position as Andy's favorite toy jeopardized when his parents buy him a Buzz Lightyear (Tim Allen) action figure. Even worse, the arrogant Buzz thinks he's a real spaceman on a mission to return to his home planet. When Andy's family moves to a new house, Woody and Buzz must escape the clutches of maladjusted neighbor Sid Phillips (Erik von Detten) and reunite with their boy."
+        android:textColor="#6D6D6D"
+        android:textSize="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBooking"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llRating"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnBooking"
+        android:layout_width="386dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/tvMovieDescription"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#02457A"
+        android:text="Booking"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMovieDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

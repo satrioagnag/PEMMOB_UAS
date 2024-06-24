@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#02457A"
+    tools:context=".PaymentSuccessActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="Payment Success!"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="242dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/image_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_movie_ticket" />
+
+        <ImageView
+            android:id="@+id/image_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_movie_ticket2" />
+
+    </FrameLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Ticket sudah siap untuk dicetak."
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:paddingTop="8dp" />
+
+    <Button
+        android:id="@+id/btn_print_e_ticket"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Print E-Ticket"
+        android:textColor="#02457A" />
+</LinearLayout>

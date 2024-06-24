@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "924410092425",
+    "firebase_url": "https://projectuas-3a62a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "projectuas-3a62a",
+    "storage_bucket": "projectuas-3a62a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924410092425:android:f77fcf80da5bfd74fc1f58",
+        "android_client_info": {
+          "package_name": "com.example.projectuas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD17d7VBghLurSl00o8EaxZ5R242kEWbpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
