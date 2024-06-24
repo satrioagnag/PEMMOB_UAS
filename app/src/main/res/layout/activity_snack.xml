@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     tools:context=".ActivitySnack">
 
     <!-- Top search bar -->
@@ -41,22 +42,24 @@
     </LinearLayout>
 
     <!-- Featured image -->
+
+    <!-- Drinks section -->
     <ImageView
         android:id="@+id/featured_image"
         android:layout_width="0dp"
         android:layout_height="200dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/stranger_things"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/snack"
+        app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/search_bar"
         app:layout_constraintWidth_default="percent"
-        app:layout_constraintWidth_percent="0.9"
-        app:cardCornerRadius="16dp"
-        app:layout_constraintHeight_default="wrap"
-        android:scaleType="centerCrop" />
+        app:layout_constraintWidth_percent="0.9" />
 
-    <!-- Drinks section -->
     <TextView
         android:id="@+id/drinks_label"
         android:layout_width="wrap_content"
