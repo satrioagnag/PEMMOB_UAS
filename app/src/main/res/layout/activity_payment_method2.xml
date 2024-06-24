@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    tools:context=".PaymentMethodActivity2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:layout_marginBottom="8dp">
+
+        <ImageButton
+            android:id="@+id/backButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Method"
+            android:textColor="#02457A"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_dana2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:text="Dana 0822-3456-2354"
+            android:background="@drawable/radio_button_stroke" />
+
+        <RadioButton
+            android:id="@+id/rb_bni2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="BNI 0497754XXXX"
+            android:background="@drawable/radio_button_stroke" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose another method"
+            android:textStyle="bold"
+            android:textColor="#8E8E8E"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"/>
+        <Button
+            android:id="@+id/btn_credit_card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:drawablePadding="8dp"
+            android:padding="16dp"
+            android:text="Credit or Debit Card"
+            android:textColor="#333333"
+            android:background="@drawable/button_background"
+            android:textSize="14sp"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/btn_add_e_wallet2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:drawablePadding="8dp"
+            android:padding="16dp"
+            android:text="Add another E-Wallet"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/btn_add_bank_account2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:drawablePadding="8dp"
+            android:padding="16dp"
+            android:text="Add another Bank Account"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:textAlignment="viewStart" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cb_terms2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Accept the reCAPTCHA Term of Service."
+        android:textColor="#333333"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By verify it, you agree to accept our Term of Service. Please read and understand all applicable terms and policies before accessing."
+        android:textColor="#777777"
+        android:textSize="12sp"
+        android:paddingTop="8dp"/>
+
+    <Button
+        android:id="@+id/btn_pay_order2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#02457A"
+        android:text="Pay Order" />
+
+</LinearLayout>
