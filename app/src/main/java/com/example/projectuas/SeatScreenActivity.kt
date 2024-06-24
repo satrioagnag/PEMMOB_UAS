@@ -96,7 +96,11 @@ class SeatScreenActivity : AppCompatActivity() {
     }
 
     private fun navigateToPayment() {
-        val intent = Intent(this, PaymentActivity::class.java)
+        val totalPrice = selectedSeats.size * seatPrice
+        val intent = Intent(this, PaymentActivity::class.java).apply {
+            putExtra("total_price", totalPrice)
+        }
         startActivity(intent)
     }
+
 }
