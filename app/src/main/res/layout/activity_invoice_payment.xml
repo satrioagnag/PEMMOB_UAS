@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:padding="16dp">
+    android:padding="16dp"
+    tools:context=".InvoicePaymentActivity">
 
     <!-- Header -->
     <RelativeLayout
@@ -125,83 +126,82 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- Payment Details -->
-
-    <!-- QR Code Section -->
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/paymentDetailsLayout"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/price_details_background"
+        android:orientation="vertical"
         android:padding="16dp"
-        app:layout_constraintBottom_toTopOf="@id/qrSection"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ivPoster"
-        app:layout_constraintVertical_bias="0.114">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/qrSection">
 
-        <TextView
-            android:id="@+id/basic2D"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Basic 2D (x4)"
-            android:textColor="#888888"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:orientation="horizontal"
+            android:weightSum="2">
 
-        <TextView
-            android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Basic 2D (x4)" />
+
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="end"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rp160.000,-"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/basic2D" />
+            android:orientation="horizontal"
+            android:weightSum="2">
 
-        <TextView
-            android:id="@+id/serviceFee"
-            android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Service Fee" />
+
+            <TextView
+                android:id="@+id/serviceFee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Service Fee"
-            android:textColor="#888888"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/basic2D" />
+            android:orientation="horizontal"
+            android:weightSum="2">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rp5.000,-"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/serviceFee" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total Payment"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/totalPayment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Total Payment"
-            android:textColor="#888888"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/serviceFee" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rp165.000,-"
-            android:textColor="#0070C0"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/totalPayment" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <!-- Back Button -->
+            <TextView
+                android:id="@+id/totalPayment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text=""
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/qrSection"
@@ -235,7 +235,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_pay_order"
+        android:id="@+id/btn_back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -243,4 +243,5 @@
         android:text="Back"
         app:layout_constraintTop_toBottomOf="@id/qrSection"
         tools:layout_editor_absoluteX="32dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

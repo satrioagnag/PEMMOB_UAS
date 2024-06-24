@@ -8,17 +8,17 @@
     <item
         android:id="@+id/navigation_snack"
         android:icon="@drawable/ic_snack"
-        android:title="Favorites" />
+        android:title="Snack" />
 
     <item
         android:id="@+id/navigation_history"
         android:icon="@drawable/ic_history"
-        android:title="Profile" />
+        android:title="History" />
 
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_profil"
-        android:title="Settings" />
+        android:title="Profile" />
 
 </menu>
 

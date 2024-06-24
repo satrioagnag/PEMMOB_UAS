@@ -1,5 +1,6 @@
 package com.example.projectuas
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -35,19 +36,23 @@ class MainScreenActivity : AppCompatActivity() {
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigation_home -> {
-                    // Handle home action
+                    val intent = Intent(this, MainScreenActivity::class.java)
+                    startActivity(intent)
                     true
                 }
                 R.id.navigation_snack -> {
-                    // Handle snack action
+                    val intent = Intent(this, Snack::class.java)
+                    startActivity(intent)
                     true
                 }
                 R.id.navigation_history -> {
-                    // Handle history action
+                    val intent = Intent(this, HistoryActivity::class.java)
+                    startActivity(intent)
                     true
                 }
                 R.id.navigation_profile -> {
-                    // Handle profile action
+                    val intent = Intent(this, ProfileActivity::class.java)
+                    startActivity(intent)
                     true
                 }
                 else -> false
