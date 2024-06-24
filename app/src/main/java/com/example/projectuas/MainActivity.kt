@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<View>(R.id.user).setOnClickListener {
-            startActivity(Intent(this@MainActivity, ProfileActivity::class.java))
+            startActivity(Intent(this@MainActivity, SignUpActivity::class.java))
             finish()
         }
     }
