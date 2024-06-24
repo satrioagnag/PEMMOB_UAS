@@ -10,7 +10,7 @@ class SignInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
 
-        findViewById<View>(R.id.sign_up_button).setOnClickListener {
+        findViewById<View>(R.id.sign_in_button).setOnClickListener {
             startActivity(Intent(this@SignInActivity, MainScreenActivity::class.java))
             finish()
         }
