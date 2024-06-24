@@ -3,6 +3,7 @@ package com.example.projectuas
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -17,6 +18,11 @@ class MovieDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_movie)
+
+        findViewById<View>(R.id.btnBack).setOnClickListener {
+            startActivity(Intent(this@MovieDetailActivity, MainScreenActivity::class.java))
+            finish()
+        }
 
         // Initialize views
         movieImageView = findViewById(R.id.movie_image)
