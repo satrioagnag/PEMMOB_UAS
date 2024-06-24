@@ -14,5 +14,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this@MainActivity, SignUpActivity::class.java))
             finish()
         }
+        findViewById<View>(R.id.admin).setOnClickListener {
+            startActivity(Intent(this@MainActivity, SignUpActivity::class.java))
+            finish()
+        }
     }
 }
