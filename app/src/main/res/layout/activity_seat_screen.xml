@@ -55,121 +55,21 @@
             android:layout_marginBottom="16dp" />
 
         <!-- Seats Layout -->
+
+        <!-- Seat Status Legend -->
+
         <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="340dp"
+            android:layout_height="257dp"
+            android:layout_gravity="center"
             android:alignmentMode="alignMargins"
-            android:columnCount="8"
-            android:rowCount="5"
-            android:layout_gravity="center">
+            android:columnCount="7"
+            android:rowCount="4">
 
             <!-- Sample Seat Buttons -->
             <!-- Replace these with the actual seat buttons with proper IDs and states -->
             <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_available"
-                android:contentDescription="Available Seat" />
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_available"
-                android:contentDescription="Available Seat" />
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_available"
-                android:contentDescription="Available Seat" />
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_available"
-                android:contentDescription="Available Seat" />
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_booked"
-                android:contentDescription="Booked Seat" />
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_booked"
-                android:contentDescription="Booked Seat" />
-
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_booked"
-                android:contentDescription="Booked Seat" />
-
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_booked"
-                android:contentDescription="Booked Seat" />
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_available"
-                android:contentDescription="Available Seat" />
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_booked"
-                android:contentDescription="Available Seat" />
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_booked"
-                android:contentDescription="Available Seat" />
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_booked"
-                android:contentDescription="Available Seat" />
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_available"
-                android:contentDescription="Available Seat" />
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_available"
-                android:contentDescription="Available Seat" />
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_booked"
-                android:contentDescription="Available Seat" />
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_booked"
-                android:contentDescription="Available Seat" />
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_booked"
-                android:contentDescription="Available Seat" />
-            <Button
+                android:id="@+id/seat1"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
@@ -177,132 +77,271 @@
                 android:contentDescription="Available Seat" />
 
             <Button
+                android:id="@+id/seat2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
                 android:background="@drawable/seat_available"
                 android:contentDescription="Available Seat" />
+
             <Button
+                android:id="@+id/seat3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_available"
+                android:contentDescription="Available Seat" />
+
+            <Button
+                android:id="@+id/seat4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_available"
+                android:contentDescription="Available Seat" />
+
+            <Button
+                android:id="@+id/seat5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_booked"
+                android:contentDescription="Booked Seat" />
+
+            <Button
+                android:id="@+id/seat6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_booked"
+                android:contentDescription="Booked Seat" />
+
+            <Button
+                android:id="@+id/seat7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_booked"
+                android:contentDescription="Booked Seat" />
+
+            <Button
+                android:id="@+id/seat8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_booked"
+                android:contentDescription="Booked Seat" />
+
+            <Button
+                android:id="@+id/seat9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_available"
+                android:contentDescription="Available Seat" />
+
+            <Button
+                android:id="@+id/seat10"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
                 android:background="@drawable/seat_booked"
                 android:contentDescription="Available Seat" />
+
             <Button
+                android:id="@+id/seat11"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
                 android:background="@drawable/seat_booked"
                 android:contentDescription="Available Seat" />
+
             <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_available"
-                android:contentDescription="Available Seat" />
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_available"
-                android:contentDescription="Available Seat" />
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_available"
-                android:contentDescription="Available Seat" />
-            <Button
+                android:id="@+id/seat12"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
                 android:background="@drawable/seat_booked"
                 android:contentDescription="Available Seat" />
+
             <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_booked"
-                android:contentDescription="Available Seat" />
-            <Button
+                android:id="@+id/seat13"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
                 android:background="@drawable/seat_available"
                 android:contentDescription="Available Seat" />
+
             <Button
+                android:id="@+id/seat14"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
                 android:background="@drawable/seat_available"
                 android:contentDescription="Available Seat" />
+
             <Button
+                android:id="@+id/seat15"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
-                android:background="@drawable/seat_yourseat"
+                android:background="@drawable/seat_booked"
                 android:contentDescription="Available Seat" />
+
             <Button
+                android:id="@+id/seat16"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
-                android:background="@drawable/seat_yourseat"
+                android:background="@drawable/seat_booked"
                 android:contentDescription="Available Seat" />
+
             <Button
+                android:id="@+id/seat17"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
-                android:background="@drawable/seat_yourseat"
+                android:background="@drawable/seat_booked"
                 android:contentDescription="Available Seat" />
+
             <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_yourseat"
-                android:contentDescription="Available Seat" />
-            <Button
+                android:id="@+id/seat18"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
                 android:background="@drawable/seat_available"
                 android:contentDescription="Available Seat" />
+
             <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_booked"
-                android:contentDescription="Available Seat" />
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_booked"
-                android:contentDescription="Available Seat" />
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_booked"
-                android:contentDescription="Available Seat" />
-            <Button
+                android:id="@+id/seat19"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
                 android:background="@drawable/seat_available"
                 android:contentDescription="Available Seat" />
+
             <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/seat_available"
-                android:contentDescription="Available Seat" />
-            <Button
+                android:id="@+id/seat20"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
                 android:background="@drawable/seat_booked"
                 android:contentDescription="Available Seat" />
+
             <Button
+                android:id="@+id/seat21"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_booked"
+                android:contentDescription="Available Seat" />
+
+            <Button
+                android:id="@+id/seat22"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_available"
+                android:contentDescription="Available Seat" />
+
+            <Button
+                android:id="@+id/seat23"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_available"
+                android:contentDescription="Available Seat" />
+
+            <Button
+                android:id="@+id/seat24"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_available"
+                android:contentDescription="Available Seat" />
+
+            <Button
+                android:id="@+id/seat25"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_booked"
+                android:contentDescription="Available Seat" />
+
+            <Button
+                android:id="@+id/seat26"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_booked"
+                android:contentDescription="Available Seat" />
+
+            <Button
+                android:id="@+id/seat27"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_available"
+                android:contentDescription="Available Seat" />
+
+            <Button
+                android:id="@+id/seat28"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_available"
+                android:contentDescription="Available Seat" />
+
+            <Button
+                android:id="@+id/seat29"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_available"
+                android:contentDescription="Available Seat" />
+
+            <Button
+                android:id="@+id/seat30"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_available"
+                android:contentDescription="Available Seat" />
+
+            <Button
+                android:id="@+id/seat31"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_available"
+                android:contentDescription="Available Seat" />
+
+            <Button
+                android:id="@+id/seat32"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_available"
+                android:contentDescription="Available Seat" />
+
+            <Button
+                android:id="@+id/seat33"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_available"
+                android:contentDescription="Available Seat" />
+
+            <Button
+                android:id="@+id/seat34"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/seat_booked"
+                android:contentDescription="Available Seat" />
+
+            <Button
+                android:id="@+id/seat35"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
@@ -312,26 +351,27 @@
             <!-- Add other seat buttons as per your layout -->
         </GridLayout>
 
-        <!-- Seat Status Legend -->
+        <!-- Schedule Section -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginTop="16dp"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginEnd="16dp"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="16dp"
                     android:layout_height="16dp"
-                    android:background="@drawable/seat_booked"
-                    android:layout_marginEnd="8dp" />
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/seat_booked" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -344,15 +384,15 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginEnd="16dp"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="16dp"
                     android:layout_height="16dp"
-                    android:background="@drawable/seat_yourseat"
-                    android:layout_marginEnd="8dp" />
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/seat_yourseat" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -365,14 +405,14 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="16dp"
                     android:layout_height="16dp"
-                    android:background="@drawable/seat_available"
-                    android:layout_marginEnd="8dp" />
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/seat_available" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -383,7 +423,6 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Schedule Section -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -405,42 +444,46 @@
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
+                android:padding="1dp"
                 android:text="SUN 4\n15:00"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:background="@drawable/schedule_button"
                 android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:textSize="10dp" />
             <Button
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
+                android:padding="1dp"
                 android:text="MON 5\n10:00"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:background="@drawable/schedule_button"
                 android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:textSize="10dp" />
             <Button
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
+                android:padding="1dp"
                 android:text="TUE 6\n17:00"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:background="@drawable/schedule_button"
                 android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:textSize="10dp" />
             <Button
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
+                android:padding="1dp"
                 android:text="WED 7\n20:00"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:background="@drawable/schedule_button"
                 android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:textSize="10sp" />
 
             <!-- Add other schedule buttons as per your layout -->
         </LinearLayout>
@@ -454,18 +497,20 @@
             android:gravity="center">
 
             <TextView
+                android:id="@+id/ticketCount"
                 android:layout_width="265dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
-                android:text="4 Ticket"
+                android:text=""
                 android:textColor="#02457A"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/totalPrice"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Rp160.000"
+                android:text=""
                 android:textColor="#000000"
                 android:textSize="15dp" />
         </LinearLayout>
