@@ -34,6 +34,11 @@ class InvoicePaymentActivity : AppCompatActivity() {
         val movieTitle = intent.getStringExtra("movie_title")
         val movieImage = intent.getIntExtra("movie_image", 0)
         val totalPrice = intent.getIntExtra("total_price", 0)
+        val intent = Intent(this, InvoicePaymentActivity::class.java)
+        intent.putExtra("movie_title", movieTitle)
+        intent.putExtra("movie_image", movieImage)
+        intent.putExtra("total_price", totalPrice)
+        startActivity(intent)
 
         if (movieTitle != null) {
             movieTitleTextView.text = movieTitle

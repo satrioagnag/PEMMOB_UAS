@@ -39,8 +39,17 @@ class PaymentMethodActivity : AppCompatActivity() {
         }
     }
     private fun navigateToSuccess() {
-        // Start PaymentActivity
-        val intent = Intent(this, PaymentSuccessActivity::class.java)
+
+        val totalPrice = updateSeatInfo()
+
+        val intent = Intent(this, InvoicePaymentActivity::class.java)
+        intent.putExtra("total_price", totalPrice)
         startActivity(intent)
     }
+
+    private fun updateSeatInfo(): Int {
+
+        return 80000
+    }
+
 }
