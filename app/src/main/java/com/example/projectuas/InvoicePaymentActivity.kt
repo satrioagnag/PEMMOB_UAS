@@ -63,6 +63,5 @@ class InvoicePaymentActivity : AppCompatActivity() {
 
     private fun navigateToSnack() {
         startActivity(Intent(this@InvoicePaymentActivity, ActivitySnack::class.java))
-        finish()
     }
 }

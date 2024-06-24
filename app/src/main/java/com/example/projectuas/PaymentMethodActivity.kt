@@ -42,7 +42,7 @@ class PaymentMethodActivity : AppCompatActivity() {
 
         val totalPrice = updateSeatInfo()
 
-        val intent = Intent(this, InvoicePaymentActivity::class.java)
+        val intent = Intent(this, PaymentSuccessActivity::class.java)
         intent.putExtra("total_price", totalPrice)
         startActivity(intent)
     }
