@@ -472,6 +472,7 @@
 
         <!-- Next Button -->
         <Button
+            android:id="@+id/btnNext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
@@ -479,7 +480,8 @@
             android:padding="5dp"
             android:text="Next"
             android:textAlignment="center"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
+            android:textStyle="bold"
             android:textSize="30dp" />
     </LinearLayout>
 
