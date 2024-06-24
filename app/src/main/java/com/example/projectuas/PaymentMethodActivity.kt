@@ -14,10 +14,6 @@ class PaymentMethodActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        findViewById<View>(R.id.backButton).setOnClickListener {
-            startActivity(Intent(this@PaymentMethodActivity, PaymentActivity::class.java))
-            finish()
-        }
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_payment_method)
 

@@ -24,7 +24,6 @@ class PaymentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_payment)
 
-
         // Initialize views
         movieImageView = findViewById(R.id.imageViewPoster)
         movieTitleTextView = findViewById(R.id.textViewTitle)
